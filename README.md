@@ -99,14 +99,14 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 包含多个实用在线工具，纯前端实现，无需后端服务器。
 
 **🔗 快速访问：**
-- [实用工具集首页](https://tool.souvc.cn/index.html)
-- [天气查询工具](https://tool.souvc.cn/tianqi.html)
-- [书摘生成器](https://tool.souvc.cn/arttext.html)
-- [二维码生成器](https://tool.souvc.cn/erweima.html)
-- [PDF转HTML工具](https://tool.souvc.cn/pdftohtml.html)
-- [CRON表达式工具](https://tool.souvc.cn/cron.html)
-- [MCP工具汇总](https://tool.souvc.cn/mcp.html)
-- [YAML转换工具](https://tool.souvc.cn/toyml.html)
+- [实用工具集首页](https://tools.souvc.cn/index.html)
+- [天气查询工具](https://tools.souvc.cn/tianqi.html)
+- [书摘生成器](https://tools.souvc.cn/arttext.html)
+- [二维码生成器](https://tools.souvc.cn/erweima.html)
+- [PDF转HTML工具](https://tools.souvc.cn/pdftohtml.html)
+- [CRON表达式工具](https://tools.souvc.cn/cron.html)
+- [MCP工具汇总](https://tools.souvc.cn/mcp.html)
+- [YAML转换工具](https://tools.souvc.cn/toyml.html)
 
 **工具列表：**
 - 🌤️ **天气查询** - 实时天气数据、空气质量指数、未来6天预报
@@ -122,14 +122,14 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 一个精美的图片展示和下载工具集合，包含多个专业的图片站点，每个都有独特的主题和功能。
 
 **🔗 快速访问：**
-- [图片工具集首页](https://image.souvc.cn/index.html)
-- [二次元图片站](https://image.souvc.cn/acg.html)
-- [必应每日美图](https://image.souvc.cn/biying.html)
-- [移动美女壁纸站](https://image.souvc.cn/mobile-girl.html)
-- [PC美女壁纸站](https://image.souvc.cn/pc-girl.html)
-- [AI头像推荐](https://image.souvc.cn/touxiang.html)
-- [风景图片站](https://image.souvc.cn/views.html)
-- [网易云音乐榜单](https://image.souvc.cn/wangyi.html)
+- [图片工具集首页](https://images.souvc.cn/index.html)
+- [二次元图片站](https://images.souvc.cn/acg.html)
+- [必应每日美图](https://images.souvc.cn/biying.html)
+- [移动美女壁纸站](https://images.souvc.cn/mobile-girl.html)
+- [PC美女壁纸站](https://images.souvc.cn/pc-girl.html)
+- [AI头像推荐](https://images.souvc.cn/touxiang.html)
+- [风景图片站](https://images.souvc.cn/views.html)
+- [网易云音乐榜单](https://images.souvc.cn/wangyi.html)
 
 **核心功能：**
 - 🌸 **二次元ACG** - 精选动漫美图，樱花飘落动画效果
@@ -191,8 +191,8 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 - **JSON 工具集**: [https://www.souvc.cn/](https://www.souvc.cn/)
 - **出海建站导航**: [https://chuhai.souvc.cn/](https://chuhai.souvc.cn/)
 - **摸鱼神器**: [https://moyu.souvc.cn/](https://moyu.souvc.cn/)
-- **实用工具集**: [https://tool.souvc.cn/](https://tool.souvc.cn/)
-- **图片工具集**: [https://image.souvc.cn/](https://image.souvc.cn/)
+- **实用工具集**: [https://tools.souvc.cn/](https://tools.souvc.cn/)
+- **图片工具集**: [https://images.souvc.cn/](https://images.souvc.cn/)
 - **热搜热榜**: [http://www.souvc.com/juhe/hotlist/](http://hotlist.souvc.com)
 
 ### 📱 使用方式
