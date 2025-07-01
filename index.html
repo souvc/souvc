@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUVC - 搜你所想，投你所获 | 专业在线工具平台</title>
+    <meta name="description" content="SOUVC是一个专业的在线工具集合平台，提供JSON处理、出海建站、摸鱼神器、实用工具、图片工具等免费在线工具">
+    <meta name="keywords" content="在线工具,JSON格式化,出海建站,摸鱼神器,图片工具,热搜榜单">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tools Section */
+        .tools-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .tool-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .tool-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tool-link {
+            padding: 6px 12px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tool-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #ecf0f1;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #3498db;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 2rem;
+            color: #95a5a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tool-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .tool-card:nth-child(1) { animation-delay: 0.1s; }
+        .tool-card:nth-child(2) { animation-delay: 0.2s; }
+        .tool-card:nth-child(3) { animation-delay: 0.3s; }
+        .tool-card:nth-child(4) { animation-delay: 0.4s; }
+        .tool-card:nth-child(5) { animation-delay: 0.5s; }
+        .tool-card:nth-child(6) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                🛠️ SOUVC
+            </a>
+            <ul class="nav-links">
+                <li><a href="#tools">工具集合</a></li>
+                <li><a href="#features">平台特色</a></li>
+                <li><a href="http://www.cnblogs.com/liuhongfeng" target="_blank">技术博客</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>搜你所想，投你所获</h1>
+            <p>专业的在线工具集合平台，为开发者、创业者和普通用户提供高质量的免费在线工具</p>
+            <div class="hero-buttons">
+                <a href="#tools" class="btn btn-primary">
+                    🚀 开始使用
+                </a>
+                <a href="https://www.souvc.cn" target="_blank" class="btn btn-secondary">
+                    🌐 访问官网
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">🛠️ 工具集合</h2>
+            <div class="tools-grid">
+                <!-- JSON 工具集 -->
+                <div class="tool-card">
+                    <span class="tool-icon">🔧</span>
+                    <h3>JSON 工具集</h3>
+                    <p>功能强大的 JSON 处理工具集合，提供格式化、美化、压缩、验证、转换和可视化等全方位功能。</p>
+                    <div class="tool-links">
+                        <a href="https://json.souvc.cn/index.html" target="_blank" class="tool-link">高级版</a>
+                        <a href="https://json.souvc.cn/json.html" target="_blank" class="tool-link">简洁版</a>
+                        <a href="https://json.souvc.cn/json2sql.html" target="_blank" class="tool-link">转SQL</a>
+                        <a href="https://json.souvc.cn/jsoncrack.html" target="_blank" class="tool-link">可视化</a>
+                        <a href="https://json.souvc.cn/jwt.html" target="_blank" class="tool-link">JWT解析</a>
+                    </div>
+                </div>
+
+                <!-- 出海建站导航 -->
+                <div class="tool-card">
+                    <span class="tool-icon">🚀</span>
+                    <h3>出海建站导航</h3>
+                    <p>专业的建站资源聚合平台，为出海创业者和开发者提供全方位的建站工具和资源。</p>
+                    <div class="tool-links">
+                        <a href="https://chuhai.souvc.cn/index.html" target="_blank" class="tool-link">导航首页</a>
+                        <a href="https://chuhai.souvc.cn/daohang.html" target="_blank" class="tool-link">工具导航</a>
+                        <a href="https://chuhai.souvc.cn/about.html" target="_blank" class="tool-link">关于我们</a>
+                    </div>
+                </div>
+
+                <!-- 摸鱼神器 -->
+                <div class="tool-card">
+                    <span class="tool-icon">🐟</span>
+                    <h3>摸鱼神器</h3>
+                    <p>集成多种实用功能的摸鱼网站，工作娱乐两不误。包含摸鱼日历、星座运势、一言、骚话等七大功能模块。</p>
+                    <div class="tool-links">
+                        <a href="https://moyu.souvc.cn/index.html" target="_blank" class="tool-link">摸鱼日历</a>
+                        <a href="https://moyu.souvc.cn/horoscope.html" target="_blank" class="tool-link">星座运势</a>
+                        <a href="https://moyu.souvc.cn/yiyan.html" target="_blank" class="tool-link">一言文案</a>
+                        <a href="https://moyu.souvc.cn/love.html" target="_blank" class="tool-link">情话生成</a>
+                        <a href="https://moyu.souvc.cn/joke.html" target="_blank" class="tool-link">笑话大全</a>
+                    </div>
+                </div>
+
+                <!-- 实用工具集 -->
+                <div class="tool-card">
+                    <span class="tool-icon">⚡</span>
+                    <h3>实用工具集</h3>
+                    <p>包含多个实用在线工具，纯前端实现，无需后端服务器。涵盖天气查询、二维码生成、PDF转换等功能。</p>
+                    <div class="tool-links">
+                        <a href="https://tool.souvc.cn/index.html" target="_blank" class="tool-link">工具首页</a>
+                        <a href="https://tool.souvc.cn/tianqi.html" target="_blank" class="tool-link">天气查询</a>
+                        <a href="https://tool.souvc.cn/erweima.html" target="_blank" class="tool-link">二维码</a>
+                        <a href="https://tool.souvc.cn/cron.html" target="_blank" class="tool-link">CRON表达式</a>
+                        <a href="https://tool.souvc.cn/pdftohtml.html" target="_blank" class="tool-link">PDF转换</a>
+                    </div>
+                </div>
+
+                <!-- 图片工具集 -->
+                <div class="tool-card">
+                    <span class="tool-icon">🖼️</span>
+                    <h3>图片工具集</h3>
+                    <p>精美的图片展示和下载工具集合，包含二次元、风景、壁纸、头像等多种主题的图片站点。</p>
+                    <div class="tool-links">
+                        <a href="https://images.souvc.cn/index.html" target="_blank" class="tool-link">图片首页</a>
+                        <a href="https://images.souvc.cn/acg.html" target="_blank" class="tool-link">二次元</a>
+                        <a href="https://images.souvc.cn/biying.html" target="_blank" class="tool-link">必应美图</a>
+                        <a href="https://images.souvc.cn/views.html" target="_blank" class="tool-link">风景图片</a>
+                        <a href="https://images.souvc.cn/touxiang.html" target="_blank" class="tool-link">AI头像</a>
+                    </div>
+                </div>
+
+                <!-- 热搜热榜 -->
+                <div class="tool-card">
+                    <span class="tool-icon">🔥</span>
+                    <h3>热搜热榜聚合</h3>
+                    <p>现代化的热搜热榜聚合展示页面，实时追踪全网热点。聚合知乎、微博、B站等多个平台的热榜数据。</p>
+                    <div class="tool-links">
+                        <a href="https://hotlist.souvc.cn/index.html" target="_blank" class="tool-link">热榜聚合</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">🌟 平台特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h4>安全可靠</h4>
+                    <p>所有数据处理在浏览器本地完成，不收集用户数据，保护隐私安全</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h4>用户体验</h4>
+                    <p>响应式布局，完美适配各种设备，快速加载，离线可用</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💡</span>
+                    <h4>技术优势</h4>
+                    <p>纯前端实现，零安装，跨平台支持，持续更新优化</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🆓</span>
+                    <h4>完全免费</h4>
+                    <p>所有工具均为免费使用，无需注册，即开即用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🛠️ 工具分类</h4>
+                    <a href="https://json.souvc.cn/" target="_blank">JSON 工具集</a>
+                    <a href="https://chuhai.souvc.cn/" target="_blank">出海建站导航</a>
+                    <a href="https://moyu.souvc.cn/" target="_blank">摸鱼神器</a>
+                    <a href="https://tool.souvc.cn/" target="_blank">实用工具集</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🖼️ 更多工具</h4>
+                    <a href="https://images.souvc.cn/" target="_blank">图片工具集</a>
+                    <a href="https://hotlist.souvc.cn/" target="_blank">热搜热榜</a>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 联系我们</h4>
+                    <a href="https://www.souvc.cn/" target="_blank">官方网站</a>
+                    <a href="http://www.cnblogs.com/liuhongfeng" target="_blank">技术博客</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SOUVC. 搜你所想，投你所获 - 专业在线工具平台</p>
+                <p>💡 所有工具均为免费使用，我们致力于为用户提供最优质的在线工具体验</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 30px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // 工具卡片点击统计（可选）
+        document.querySelectorAll('.tool-link').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('工具访问:', this.textContent, this.href);
+            });
+        });
+    </script>
+</body>
+</html>
