@@ -1,6 +1,6 @@
 # 🚀 SOUVC 工具集合
 
-> 搜你所想，投你所获 - 专业的在线工具平台
+> 搜唯网 搜你所想，投你所获 - 专业的在线工具平台
 
 [![Website](https://img.shields.io/badge/Website-souvc.com-blue?style=flat&logo=internet-explorer)](http://www.souvc.com/)
 [![Blog](https://img.shields.io/badge/Blog-博客园-green?style=flat&logo=rss)](http://www.cnblogs.com/liuhongfeng)
@@ -8,7 +8,7 @@
 
 ## 📖 平台简介
 
-SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创业者和普通用户提供高质量的免费在线工具。我们的工具涵盖数据处理、开发辅助、娱乐休闲、信息聚合等多个领域，所有工具均采用纯前端技术实现，确保数据安全和隐私保护。
+搜唯网 是一个专业的在线工具集合平台，致力于为开发者、创业者和普通用户提供高质量的免费在线工具。我们的工具涵盖数据处理、开发辅助、娱乐休闲、信息聚合等多个领域，所有工具均采用纯前端技术实现，确保数据安全和隐私保护。
 
 ## 🛠️ 工具分类
 
@@ -152,7 +152,7 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 现代化的热搜热榜聚合展示页面，实时追踪全网热点。
 
 **🔗 快速访问：**
-- [热搜热榜聚合页面](http://hotlist.souvc.com/index.html)
+- [热搜热榜聚合页面](http://hotlist.souvc.com)
 
 **核心功能：**
 - 🎯 **多平台聚合** - 知乎、微博、36氪、今日头条、虎扑、B站等
@@ -193,7 +193,7 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 - **摸鱼神器**: [https://moyu.souvc.cn/](https://moyu.souvc.cn/)
 - **实用工具集**: [https://tools.souvc.cn/](https://tools.souvc.cn/)
 - **图片工具集**: [https://images.souvc.cn/](https://images.souvc.cn/)
-- **热搜热榜**: [http://www.souvc.com/juhe/hotlist/](http://hotlist.souvc.com)
+- **热搜热榜**: [http://hotlist.souvc.com/](http://hotlist.souvc.com)
 
 ### 📱 使用方式
 1. **直接访问** - 打开网站即可使用所有工具
@@ -213,7 +213,7 @@ SOUVC 是一个专业的在线工具集合平台，致力于为开发者、创�
 
 如果您有任何问题、建议或合作意向，欢迎通过以下方式联系我们：
 
-- 📧 **官方网站**: [http://www.souvc.cn/](http://www.souvc.com/)
+- 📧 **官方网站**: [http://www.souvc.cn/](http://www.souvc.cn/)
 - 📝 **技术博客**: [http://www.cnblogs.com/liuhongfeng](http://www.cnblogs.com/liuhongfeng)
 
 ---
