@@ -18,17 +18,17 @@
 一个功能强大的 JSON 处理工具集合，提供格式化、美化、压缩、验证、转换和可视化等全方位功能。
 
 **🔗 快速访问：**
-- [JSON 格式化工具（高级版）](https://json.souvc.cn/index.html)
-- [JSON 格式化工具（简洁版）](https://json.souvc.cn/json.html)
-- [JSON 增强版工具](https://json.souvc.cn/json-plus.html)
-- [JSON 转 SQL 工具](https://json.souvc.cn/json2sql.html)
-- [JSON 可视化工具](https://json.souvc.cn/jsoncrack.html)
-- [JSON 差异对比工具](https://json.souvc.cn/diff.html)
-- [JWT 解析工具](https://json.souvc.cn/jwt.html)
-- [JSON 转 Java 代码](https://json.souvc.cn/tojava.html)
-- [JSON 转 Excel](https://json.souvc.cn/toExcel.html)
-- [JSON 转 XML](https://json.souvc.cn/toxml.html)
-- [非标准 JSON 转换](https://json.souvc.cn/tojson.html)
+- [JSON 格式化工具（高级版）](https://json.souvc.com/index.html)
+- [JSON 格式化工具（简洁版）](https://json.souvc.com/json.html)
+- [JSON 增强版工具](https://json.souvc.com/json-plus.html)
+- [JSON 转 SQL 工具](https://json.souvc.com/json2sql.html)
+- [JSON 可视化工具](https://json.souvc.com/jsoncrack.html)
+- [JSON 差异对比工具](https://json.souvc.com/diff.html)
+- [JWT 解析工具](https://json.souvc.com/jwt.html)
+- [JSON 转 Java 代码](https://json.souvc.com/tojava.html)
+- [JSON 转 Excel](https://json.souvc.com/toExcel.html)
+- [JSON 转 XML](https://json.souvc.com/toxml.html)
+- [非标准 JSON 转换](https://json.souvc.com/tojson.html)
 
 **核心功能：**
 - 🎨 **JSON 格式化** - 高级版和简洁版双重选择，支持语法验证、搜索高亮、树形显示
@@ -49,9 +49,9 @@
 专业的建站资源聚合平台，为出海创业者和开发者提供全方位的建站工具和资源。
 
 **🔗 快速访问：**
-- [出海建站导航首页](https://chuhai.souvc.cn/index.html)
-- [建站工具导航](https://chuhai.souvc.cn/daohang.html)
-- [关于出海建站](https://chuhai.souvc.cn/about.html)
+- [出海建站导航首页](https://chuhai.souvc.com/index.html)
+- [建站工具导航](https://chuhai.souvc.com/daohang.html)
+- [关于出海建站](https://chuhai.souvc.com/about.html)
 
 **核心功能：**
 - 🔍 **智能搜索** - 快速查找所需工具和资源
@@ -70,14 +70,14 @@
 集成多种实用功能的摸鱼网站，工作娱乐两不误。
 
 **🔗 快速访问：**
-- [摸鱼神器首页](https://moyu.souvc.cn/index.html)
-- [摸鱼日历](https://moyu.souvc.cn/index.html)
-- [星座运势](https://moyu.souvc.cn/horoscope.html)
-- [一言文案](https://moyu.souvc.cn/yiyan.html)
-- [骚话生成器](https://moyu.souvc.cn/sexy.html)
-- [情话生成器](https://moyu.souvc.cn/love.html)
-- [笑话大全](https://moyu.souvc.cn/joke.html)
-- [舔狗日记](https://moyu.souvc.cn/dog.html)
+- [摸鱼神器首页](https://moyu.souvc.com/index.html)
+- [摸鱼日历](https://moyu.souvc.com/index.html)
+- [星座运势](https://moyu.souvc.com/horoscope.html)
+- [一言文案](https://moyu.souvc.com/yiyan.html)
+- [骚话生成器](https://moyu.souvc.com/sexy.html)
+- [情话生成器](https://moyu.souvc.com/love.html)
+- [笑话大全](https://moyu.souvc.com/joke.html)
+- [舔狗日记](https://moyu.souvc.com/dog.html)
 
 **七大功能模块：**
 - 📅 **摸鱼日历** - 每日更新的有趣摸鱼主题图片
@@ -99,14 +99,14 @@
 包含多个实用在线工具，纯前端实现，无需后端服务器。
 
 **🔗 快速访问：**
-- [实用工具集首页](https://tools.souvc.cn/index.html)
-- [天气查询工具](https://tools.souvc.cn/tianqi.html)
-- [书摘生成器](https://tools.souvc.cn/arttext.html)
-- [二维码生成器](https://tools.souvc.cn/erweima.html)
-- [PDF转HTML工具](https://tools.souvc.cn/pdftohtml.html)
-- [CRON表达式工具](https://tools.souvc.cn/cron.html)
-- [MCP工具汇总](https://tools.souvc.cn/mcp.html)
-- [YAML转换工具](https://tools.souvc.cn/toyml.html)
+- [实用工具集首页](https://tools.souvc.com/index.html)
+- [天气查询工具](https://tools.souvc.com/tianqi.html)
+- [书摘生成器](https://tools.souvc.com/arttext.html)
+- [二维码生成器](https://tools.souvc.com/erweima.html)
+- [PDF转HTML工具](https://tools.souvc.com/pdftohtml.html)
+- [CRON表达式工具](https://tools.souvc.com/cron.html)
+- [MCP工具汇总](https://tools.souvc.com/mcp.html)
+- [YAML转换工具](https://tools.souvc.com/toyml.html)
 
 **工具列表：**
 - 🌤️ **天气查询** - 实时天气数据、空气质量指数、未来6天预报
@@ -122,14 +122,14 @@
 一个精美的图片展示和下载工具集合，包含多个专业的图片站点，每个都有独特的主题和功能。
 
 **🔗 快速访问：**
-- [图片工具集首页](https://images.souvc.cn/index.html)
-- [二次元图片站](https://images.souvc.cn/acg.html)
-- [必应每日美图](https://images.souvc.cn/biying.html)
-- [移动美女壁纸站](https://images.souvc.cn/mobile-girl.html)
-- [PC美女壁纸站](https://images.souvc.cn/pc-girl.html)
-- [AI头像推荐](https://images.souvc.cn/touxiang.html)
-- [风景图片站](https://images.souvc.cn/views.html)
-- [网易云音乐榜单](https://images.souvc.cn/wangyi.html)
+- [图片工具集首页](https://images.souvc.com/index.html)
+- [二次元图片站](https://images.souvc.com/acg.html)
+- [必应每日美图](https://images.souvc.com/biying.html)
+- [移动美女壁纸站](https://images.souvc.com/mobile-girl.html)
+- [PC美女壁纸站](https://images.souvc.com/pc-girl.html)
+- [AI头像推荐](https://images.souvc.com/touxiang.html)
+- [风景图片站](https://images.souvc.com/views.html)
+- [网易云音乐榜单](https://images.souvc.com/wangyi.html)
 
 **核心功能：**
 - 🌸 **二次元ACG** - 精选动漫美图，樱花飘落动画效果
@@ -184,15 +184,15 @@
 
 ### 🌐 在线访问
 访问我们的官方网站即可使用所有工具：
-- **官方网站**: [http://www.souvc.com/](http://www.souvc.cn/)
+- **官方网站**: [http://www.souvc.com/](http://www.souvc.com/)
 - **博客园**: [http://www.cnblogs.com/liuhongfeng](http://www.cnblogs.com/liuhongfeng)
 
 ### 🚀 工具快速导航
-- **JSON 工具集**: [https://www.souvc.cn/](https://www.souvc.cn/)
-- **出海建站导航**: [https://chuhai.souvc.cn/](https://chuhai.souvc.cn/)
-- **摸鱼神器**: [https://moyu.souvc.cn/](https://moyu.souvc.cn/)
-- **实用工具集**: [https://tools.souvc.cn/](https://tools.souvc.cn/)
-- **图片工具集**: [https://images.souvc.cn/](https://images.souvc.cn/)
+- **JSON 工具集**: [https://www.souvc.com/](https://www.souvc.com/)
+- **出海建站导航**: [https://chuhai.souvc.com/](https://chuhai.souvc.com/)
+- **摸鱼神器**: [https://moyu.souvc.com/](https://moyu.souvc.com/)
+- **实用工具集**: [https://tools.souvc.com/](https://tools.souvc.com/)
+- **图片工具集**: [https://images.souvc.com/](https://images.souvc.com/)
 - **热搜热榜**: [http://hotlist.souvc.com/](http://hotlist.souvc.com)
 
 ### 📱 使用方式
@@ -213,7 +213,7 @@
 
 如果您有任何问题、建议或合作意向，欢迎通过以下方式联系我们：
 
-- 📧 **官方网站**: [http://www.souvc.cn/](http://www.souvc.cn/)
+- 📧 **官方网站**: [http://www.souvc.com/](http://www.souvc.com/)
 - 📝 **技术博客**: [http://www.cnblogs.com/liuhongfeng](http://www.cnblogs.com/liuhongfeng)
 
 ---
